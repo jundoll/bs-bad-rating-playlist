@@ -27,7 +27,7 @@ u20 = {
     "playlistTitle": "under 20%",
     "playlistAuthor": "",
     "playlistDescription": "",
-    "songs": list(df[(df['downVotes'] > 0) & (df['rating'] < 0.2) & (df['downloadCount'] > 1000) & (df['automapper'].isnull())]['ID']),
+    "songs": list(df[(df['downVotes'] > 0) & (df['rating'] < 0.2) & (df['downloadCount'] >= 1000) & (df['automapper'].isnull())]['ID']),
     "image": img
 }
 with open('dist/u20.json', 'w') as f:
