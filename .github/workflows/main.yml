@@ -36,7 +36,10 @@ jobs:
           cd dist
           zip -r bad-rating-playlist.zip ./*.*
           assets=()
-          for asset in ./*.*; do
+          for asset in ./*.csv; do
+            assets+=("-a" "$asset")
+          done
+          for asset in ./*.json; do
             assets+=("-a" "$asset")
           done
           assets+=("-a" "bad-rating-playlist.zip")
