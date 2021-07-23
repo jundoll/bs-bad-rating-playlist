@@ -5,7 +5,7 @@
 
 ## ダウンロード先
 
- * [u20.json](https://github.com/jundoll/bs-bad-rating-playlist/releases/latest/u20.json)
+ * [u20.json](https://github.com/jundoll/bs-bad-rating-playlist/releases/latest/download/u20.json)
 
 ## 説明
 
