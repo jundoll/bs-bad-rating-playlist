@@ -15,6 +15,8 @@ df = pd.DataFrame.from_dict(data, orient="index")
 df['ID'] = data.keys()
 df = df.drop(["mapper", "song"], axis=1)
 df = df[df['uploaddate'].notnull()]
+df = df.loc[:, ['ID', 'diffs', 'key', 'bpm', 'downloadCount',
+                'upVotes', 'downVotes', 'heat', 'rating', 'automapper', 'uploaddate']]
 
 # output csv
 df_csv = df.drop(["diffs"], axis=1)
