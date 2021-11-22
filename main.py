@@ -26,11 +26,16 @@ df_csv.to_csv("dist/all.csv", index=False)
 with open('img/u20.txt', 'r') as f:
     img = f.read()
 u20 = {
+    "customData": {
+        "syncURL": f"https://github.com/jundoll/s-bad-rating-playlist/releases/latest/download/u20.bplist",
+        "weighting": 20,
+        "customPassText": None
+    },
     "playlistTitle": "under 20%",
     "playlistAuthor": "",
     "playlistDescription": "",
     "songs": [{"hash": ID} for ID in df[(df['downVotes'] > 0) & (df['rating'] < 0.2) & (df['downloadCount'] >= 1000) & (df['automapper'].isnull())]['ID']],
     "image": img
 }
-with open('dist/u20.json', 'w') as f:
+with open('dist/u20.bplist', 'w') as f:
     json.dump(u20, f)
