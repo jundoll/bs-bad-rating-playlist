@@ -39,7 +39,7 @@ jobs:
           for asset in ./*.csv; do
             assets+=("-a" "$asset")
           done
-          for asset in ./*.json; do
+          for asset in ./*.bplist; do
             assets+=("-a" "$asset")
           done
           assets+=("-a" "bad-rating-playlist.zip")
