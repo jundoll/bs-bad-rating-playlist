@@ -27,9 +27,7 @@ with open('img/u20.txt', 'r') as f:
     img = f.read()
 u20 = {
     "customData": {
-        "syncURL": f"https://github.com/jundoll/s-bad-rating-playlist/releases/latest/download/u20.bplist",
-        "weighting": 20,
-        "customPassText": None
+        "syncURL": f"https://github.com/jundoll/s-bad-rating-playlist/releases/latest/download/u20.bplist"
     },
     "playlistTitle": "under 20%",
     "playlistAuthor": "",
