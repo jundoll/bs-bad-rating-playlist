@@ -1,0 +1,1 @@
+VERSION="bs-bad-rating-playlist/1.0.0"

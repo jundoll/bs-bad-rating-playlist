@@ -1,20 +1,22 @@
+[![BUILD](https://github.com/jundoll/bs-bad-rating-playlist/actions/workflows/main.yml/badge.svg)](https://github.com/jundoll/bs-bad-rating-playlist/actions/workflows/main.yml)
+[![Github All Releases](https://img.shields.io/github/downloads/jundoll/bs-bad-rating-playlist/total.svg)](https://github.com/jundoll/bs-bad-rating-playlist/releases)
+
 # bs-bad-rating-playlist
 
 低評価の多い譜面を集めたプレイリストです。
 
-
 ## ダウンロード先
 
- * [u20.json](https://github.com/jundoll/bs-bad-rating-playlist/releases/latest/download/u20.json)
+- [こちら](https://github.com/jundoll/bs-bad-rating-playlist/releases/latest)からどうぞ
 
-## 説明
+## その他
 
-### 抽出条件
- - ダウンロード数 1000 以上
- - 低評価 1 以上 (レート 0% 回避のため）
- - レート 20% 未満
- - automapperフラグなし（beatsage等除去のため）
- - ダウンロード可能
+- プレイリストは毎日 1 回更新します
+- 下画像の赤枠のアイコンを押すことで最新のプレイリストに更新できます (PlaylistManager の mod が必要です)  
+  (画像は別のプレイリストのものです)
+  ![Sync](imgs/sync.png)
+- 今後、プレイリストの画像は追加する予定です。
+- 今後、譜面の並び順は変更する可能性があります。
+- 今後、何％から何％にするかのプレイリストにするかどうかは変更する可能性があります。
+- automapperフラグなしの譜面が対象です。（beatsage等除去のため）
 
-### その他
- - 2時間ごとに更新します。
