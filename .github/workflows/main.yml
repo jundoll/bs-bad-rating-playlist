@@ -50,10 +50,7 @@ jobs:
           for asset in ./*.bplist; do
             assets+=("-a" "$asset")
           done
-          for asset in ./*.json; do
-            assets+=("-a" "$asset")
-          done
-          assets+=("-a" "bad-rating-playlist.zip")
+          assets+=("-a" "all_playlists.zip")
           tag_name=`date '+%Y%m%d%H%M'`
           hub release create "${assets[@]}" -m "Latest" "$tag_name"
         env:
