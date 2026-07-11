@@ -58,8 +58,8 @@ async def main():
         songs = [e for e, i in zip(songs, slct_index) if i]
 
         # read image
-        with open('imgs/u20.txt', 'r') as f:
-            img = f.read()
+        # with open('imgs/u20.txt', 'r') as f:
+        #    img = f.read()
 
         # gen playlist
         fname = f'rating-{int(minRating*100)}percent-to-{int(maxRating*100)}percent-playlist.bplist'
@@ -69,8 +69,8 @@ async def main():
             },
             "playlistTitle": f'rating-{int(minRating*100)}percent-to-{int(maxRating*100)}percent',
             "playlistAuthor": "",
-            "songs": songs,
-            #"image": img
+            "songs": songs
+            # "image": img
         }
 
         # save

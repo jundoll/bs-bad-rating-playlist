@@ -1,1 +1,1 @@
-VERSION="bs-bad-rating-playlist/1.0.0"
+VERSION="bs-bad-rating-playlist/1.1.0"
